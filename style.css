@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: palegoldenrod;
+    text-shadow: 
+        1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black;
+}
+
+header {
+    background-color: palegoldenrod;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+header h1 {
+    color: beige;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Take remaining space after header and nav */
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    gap: 10px;
+    margin: 10px;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.box {
+    padding: 50px;
+    border: solid 1px whitesmoke;
+    box-shadow: -20px 20px 60px wheat;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 50%;
+}
+
+button {
+    background-color: hsl(55, 67%, 85%);
+    width: 100%;
+    color: palegoldenrod;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    text-shadow: 
+        0.5px 0.5px black,
+        -0.5px -0.5px black,
+        0.5px -0.5px black,
+        -0.5px 0.5px black;
+}
+
+button:hover {
+    background-color: palegoldenrod;
+    transition: 0.3s ease-in-out;
+}
+
+.player {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.control {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: flex;
+}
+
+footer {
+    background-color: palegoldenrod;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.recorder {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.recorder-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.cd-container {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+    z-index: 1;
+    transform: rotateY(45deg); /* Default to no rotation */
+}
+
+.cd-image {
+    width: 100%;
+    height: 40%;
+    border-radius: 50%;
+    /* animation: spin 5s linear infinite; */
+    
+    z-index: 1;
+}
+
+#play {
+    display: block;
+}
+
+#pause {
+    display: none;
+}
+
+.gatunki-image{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+@keyframes spin{
+    0% { transform: rotate(0deg); width: 100%; height: 40%;}
+    25% { transform: rotate(90deg); width: 40%; height: 100%;}
+    50% { transform: rotate(180deg); width: 100%; height: 40%;}
+    75% { transform: rotate(270deg); width: 40%; height: 100%;}
+    100% { transform: rotate(360deg); width: 100%; height: 40%;}
+}

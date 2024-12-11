@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzyka Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Hobby - Muzyka</h1>
+    </header>
+    <nav>
+        <a href="index.html">
+            <button>Muzyka</button>
+        </a>
+        <a href="gatunki.html">
+            <button>Gatunki</button>
+        </a>
+    </nav>
+    <main>
+        <div class="box">
+            <h2>Odtwarzacz</h2>
+            <div class="player">
+                <div class="screen">
+                    <p class="title">Teraz gra:</p>
+                </div>
+                <div class="recorder">
+                    <img src="recordplayer.png" alt="Grający obrazek" class="recorder-image">
+                    <div class="cd-container">
+                        <img src="cds/cd1.png" alt="Spinning CD" id="cd-image" class="cd-image">
+                    </div>
+                </div>
+                <audio id="audio"></audio>
+                <div class="controls">
+                    <button class="fa-solid fa-backward control" title="Previous" id="prev"></button>
+                    <button class="fa-solid fa-play control" title="Play" id="play"></button>
+                    <button class="fa-solid fa-pause control" title="Pause" id="pause"></button>
+                    <button class="fa-solid fa-forward control" title="Next" id="next"></button>
+                </div>
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress" value="0" max="100">
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Hobby Muzyka - Wybór i słuchanie ulubionych utworów
+    </footer>
+
+    <script src="script-player.js"></script>
+</body>
+</html>
