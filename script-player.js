@@ -15,8 +15,8 @@ let currentTrackIndex = 0;
 
 // List of tracks with associated images
 const tracks = [
-    { title: 'Myslovitz - Dla Ciebie', file: 'music/track1.mp3', image: 'cds/cd1.png' },
-    { title: 'Gabriel Fleszar - Kroplą deszczu (1999).', file: 'music/track2.mp3', image: 'cds/cd2.png' }
+    { title: 'Myslovitz - Dla Ciebie', file: 'track1.mp3', image: 'cd1.png' },
+    { title: 'Gabriel Fleszar - Kroplą deszczu (1999).', file: 'track2.mp3', image: 'cd2.png' }
 ];
 
 // Function to update the player
