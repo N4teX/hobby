@@ -15,8 +15,8 @@ let currentTrackIndex = 0;
 
 // List of tracks with associated images
 const tracks = [
-    { title: 'Myslovitz - Dla Ciebie', file: 'track1.mp3', image: 'cd1.png' },
-    { title: 'Gabriel Fleszar - Kroplą deszczu (1999).', file: 'track2.mp3', image: 'cd2.png' }
+    { title: 'Myslovitz - Dla Ciebie', file: 'https://n4tex.github.io/hobby/track1.mp3', image: 'https://n4tex.github.io/hobby/cd1.png' },
+    { title: 'Gabriel Fleszar - Kroplą deszczu (1999).', file: 'https://n4tex.github.io/hobby/track2.mp3', image: 'https://n4tex.github.io/hobby/cd2.png' }
 ];
 
 // Function to update the player
