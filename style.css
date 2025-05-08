@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Neucha", sans-serif;
 }
 
 body {
     background-color: beige;
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
 }
 
